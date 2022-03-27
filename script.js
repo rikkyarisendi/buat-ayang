@@ -6,7 +6,7 @@ let sender;
 if (url.searchParams.get("by") != null) {
   sender = url.searchParams.get("by");
 } else {
-  sender = "Rikky";
+  sender = "Rikky Arisendi";
 }
 
 let footer = document.getElementById("credit");
@@ -14,7 +14,7 @@ footer.innerHTML = sender;
 footer.href = "https://rikkyarisendi.github.io/";
 
 document.querySelector(".tombol").addEventListener("click", function () {
-  Swal.fire("Maafin aku", "aku tau aku salah sama sama ayang", "question").then(function () {
+  Swal.fire("Maafin aku", "aku tau aku salah sama kamu yang", "question").then(function () {
     Swal.fire("Tapi please jangan marah ya!").then(function () {
       Swal.fire("Awas aja kalo bohong!!", "", "error").then(function () {
         const { value: name } = Swal.fire({
